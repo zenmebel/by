@@ -102,15 +102,19 @@ body.dark header {
 }
 
 .logo-mark {
-  width: 32px;
-  height: 32px;
-  border-radius: 12px;
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   background: transparent;
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+}
+.logo-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .logo-mark img {
