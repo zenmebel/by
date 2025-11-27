@@ -73,3 +73,19 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+
+/**
+ * Вызов AR-режима для <model-viewer>.
+ * Используется в кнопке "Посмотреть в AR на смартфоне".
+ */
+function enterAR(button) {
+  var card = button.parentElement;
+  if (!card) return;
+  var viewer = card.querySelector("model-viewer");
+  if (viewer && viewer.canActivateAR) {
+    viewer.activateAR();
+  } else {
+    alert("Откройте этот раздел на современном смартфоне, чтобы использовать AR.");
+  }
+}
