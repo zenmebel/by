@@ -1068,3 +1068,18 @@ body.dark .ar-viewer-card {
     flex-direction: column;
   }
 }
+.ar-items {
+  flex: 1 1 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.ar-item-title {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  color: var(--text-muted);
+}
