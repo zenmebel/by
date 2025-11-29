@@ -69,6 +69,11 @@ document.addEventListener("DOMContentLoaded", () => {
       if (textField) {
         textField.value = text;
       }
+
+      const note = document.querySelector(".form-note");
+      if (note) {
+        note.textContent = "Заявка отправлена! Евгений свяжется с вами в Telegram или по телефону.";
+      }
       // Форма отправится на Telegram Bot API через стандартный submit
     });
   }
